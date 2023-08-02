@@ -1,8 +1,8 @@
 function recorrerInputs() {
-    const firstNameError = document.getElementById('firstNameError');
-    const lastNameError = document.getElementById('lastNameError');
-    const emailAddressError = document.getElementById('emailAddressError');
-    const passwordError = document.getElementById('passwordError');
+    //const firstNameError = document.getElementById('firstNameError');
+    //const lastNameError = document.getElementById('lastNameError');
+    //const emailAddressError = document.getElementById('emailAddressError');
+    //const passwordError = document.getElementById('passwordError');
     const firstName = document.getElementById('firstName');
     const lastName = document.getElementById('lastName');
     const emailAddress = document.getElementById('emailAddress');
@@ -14,14 +14,14 @@ function recorrerInputs() {
       firstNameErrorimg.style.visibility = 'visible';
       firstName.style.border = '1px solid var(--red)';
       firstName.style.color = 'var(--red)';
-      firstName.style.marginBottom = '0rem';
+      firstName.style.marginBottom = '-1.25rem';
       
     } else {
       firstNameError.style.display = 'none';
       firstNameErrorimg.style.visibility = 'hidden';
       firstName.style.border = '1px solid var(--grayish-blue)';
       firstName.style.color = 'var(--grayish-blue)';
-      firstName.style.marginBottom = '1.125rem';
+      firstName.style.marginBottom = '0.125rem';
     }
 
     if (lastName.value === '') {
@@ -29,13 +29,13 @@ function recorrerInputs() {
       lastNameErrorimg.style.visibility = 'visible';
       lastName.style.border = '1px solid var(--red)';
       lastName.style.color = 'var(--red)';
-      lastName.style.marginBottom = '0rem';
+      lastName.style.marginBottom = '-1.25rem';
     }else {
       lastNameError.style.display = 'none';
       lastNameErrorimg.style.visibility = 'hidden';
       lastName.style.border = '1px solid var(--grayish-blue)';
       lastName.style.color = 'var(--grayish-blue)';
-      lastName.style.marginBottom = '1.125rem';
+      lastName.style.marginBottom = '0.125rem';
     }
 
     if (password.value === '') {
@@ -44,13 +44,13 @@ function recorrerInputs() {
       passwordErrorimg.style.visibility = 'visible';
       password.style.border = '1px solid var(--red)';
       password.style.color = 'var(--red)';
-      password.style.marginBottom = '0rem';
+      password.style.marginBottom = '-1.25rem';
     }else {
       passwordError.style.display = 'none';
       passwordErrorimg.style.visibility = 'hidden';
       password.style.border = '1px solid var(--grayish-blue)';
       password.style.color = 'var(--grayish-blue)';
-      password.style.marginBottom = '1.125rem';
+      password.style.marginBottom = '0.125rem';
     }
 
     if (emailPattern.test(emailAddress.value) !== true) {
@@ -58,13 +58,13 @@ function recorrerInputs() {
       emailAddressErrorimg.style.visibility = 'visible';
       emailAddress.style.border = '1px solid var(--red)';
       emailAddress.style.color = 'var(--red)';
-      emailAddress.style.marginBottom = '0rem';
+      emailAddress.style.marginBottom = '-1.25rem';
     } else {
       emailAddressError.style.display = 'none';
       emailAddressErrorimg.style.visibility = 'hidden';
       emailAddress.style.border = '1px solid var(--grayish-blue)';
       emailAddress.style.color = 'var(--grayish-blue)';
-      emailAddress.style.marginBottom = '1.125rem';
+      emailAddress.style.marginBottom = '0.125rem';
     }
 
 }

@@ -242,7 +242,7 @@ select {
     padding-left: 2rem;
     color: var(--grayish-blue);
     font-size: 0.875rem;
-    margin-bottom: 1.125rem;
+    margin-bottom: 0.125rem;
   }
 
   #container-right form input:focus {
@@ -276,7 +276,7 @@ select {
     position: relative;
     width: 1.6rem;
     height: 1.6rem;
-    bottom:65px;
+    bottom:45px;
     left: 200px;
     font-size: 1.6rem;
     color: var(--red);
@@ -297,11 +297,12 @@ select {
   }
 
   #firstNameError, #lastNameError, #emailAddressError, #passwordError {
+    position: relative;
     display: none;
-    height: 1.125rem;
+    top:1.5rem;
     align-items: center;
     justify-content: right;
-    margin-right: 3.5rem;
+    margin-right: 6rem;
     color: var(--red);
   }
 
@@ -380,9 +381,12 @@ select {
   }
 
   #container-right form i {
-    bottom:65px;
     left: 110px;
 
+  }
+
+  #firstNameError, #lastNameError, #emailAddressError, #passwordError {
+    margin-right: 3.5rem;
   }
 
 }
